@@ -1,0 +1,290 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body e cores principais */
+body {
+    background: linear-gradient(135deg, #fff0f5 0%, #fffaf0 100%);
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #ffdee1 0%, #ffe4e1 100%);
+    box-shadow: 0 4px 12px rgba(255, 105, 145, 0.3);
+    border-bottom: 3px solid #ff6f91;
+}
+
+.header img {
+    width: 150px;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #5a2a27;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.menu-links a:hover {
+    color: #ff6f91;
+    transform: translateY(-3px);
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #fff5f8 0%, #fffaf0 100%);
+}
+
+.banner .coluna {
+    flex: 1;
+}
+
+.banner .coluna:first-child p:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #5a2a27;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 105, 145, 0.2);
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ff6f91 0%, #ff4f6a 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 145, 0.3);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 105, 145, 0.4);
+}
+
+/* Cardápio */
+.cardapio {
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #fffaf0 0%, #fff0f5 100%);
+}
+
+.cardapio h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #5a2a27;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.cardapio h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6f91, #ffb6c1);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.cardapio-secao {
+    margin-bottom: 50px;
+}
+
+.cardapio-categoria {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ff6f91;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ffb6c1;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.cardapio-item {
+    background: linear-gradient(135deg, #fff0f5 0%, #fffaf0 100%);
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    border: 2px solid #ffe4e1;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    cursor: pointer;
+}
+
+.cardapio-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(255, 105, 145, 0.25);
+    border-color: #ff6f91;
+    background: linear-gradient(135deg, #fff5f8 0%, #fffbf3 100%);
+}
+
+.cardapio-nome {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #5a2a27;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.cardapio-item:hover .cardapio-nome {
+    color: #ff6f91;
+}
+
+.cardapio-preco {
+    font-weight: 700;
+    color: #ff6f91;
+    font-size: 1.1rem;
+    display: inline-block;
+    background: rgba(255, 111, 145, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.cardapio-item:hover .cardapio-preco {
+    background: rgba(255, 111, 145, 0.2);
+}
+
+.cardapio-descricao {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #ffdee1 0%, #ffe4e1 100%);
+    text-align: center;
+    padding: 40px 20px;
+    color: #5a2a27;
+    border-top: 3px solid #ff6f91;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* WhatsApp fixo */
+.link-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.link-whatsapp:hover {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.link-whatsapp img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .header img {
+        width: 120px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .banner .coluna {
+        margin-bottom: 30px;
+    }
+
+    .banner .coluna:first-child p:first-child {
+        font-size: 2rem;
+    }
+
+    .cardapio {
+        padding: 40px 20px;
+    }
+
+    .cardapio h1 {
+        font-size: 2.5rem;
+    }
+
+    .cardapio-categoria {
+        font-size: 1.6rem;
+    }
+
+    .link-whatsapp {
+        width: 60px;
+        height: 60px;
+    }
+}
